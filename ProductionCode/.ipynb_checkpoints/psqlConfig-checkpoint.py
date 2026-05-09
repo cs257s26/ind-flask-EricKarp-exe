@@ -1,3 +1,3 @@
-database_names = ("artist_origin", "stolen_art")
+database_name = "karpe2"
 username = "karpe2"
 db_password = "field953cast"

@@ -1,11 +1,7 @@
 # README
 
-Individual Flask project.
+Individual Flask project using a SQL database.
 
-To see the count of the artwork stolen from this artist search up:
-    http://127.0.0.1:PORT/artist_name/ string:name_of_creator
+I used the same data and in the same structure that the team used in our csv files as the code and tests were already built around them being in that format. I represented this through two tables, one being the stolen artwork taken from the interpo_classified_stolen..etc csv file and the other being the origins of various artists. For the artist_origin datatable I used artist, origin, and the link to the image of the artist. For the stolen_art datatable I used the artwork name, the artist's anme, and the medium of their work.
 
-To see the amount of artwork stolen from where it was created search up:
-    http://127.0.0.1:PORT/country_origin/ string:origin
-
-The \copy command was used.
+The user stories represented are the same as they were before. sql_origin_count represents a user who is curious to see what country has had the most artists with stolen artwork. sql_find_artwork represents a user who is curious about what artworks a particular artist has had stolen from them.
