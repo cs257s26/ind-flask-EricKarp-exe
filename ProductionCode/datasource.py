@@ -34,7 +34,7 @@ def sql_find_artwork(name_of_creator):
     Returns:
         list[str]: a list of artwork names by the creator (empty if none found)"""
     # Checks if the type of input is correct
-    if (type(name_of_artwork) != str):
+    if (type(name_of_creator) != str):
          raise TypeError("please provide a valid input")
 
     with psycopg2.connect(f"dbname='{database_name}' user='{username}' password='{db_password}'") as conn:
